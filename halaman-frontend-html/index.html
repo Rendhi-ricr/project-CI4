@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar with Dropdowns</title>
+  <!-- Bootstrap CSS (Ganti dengan path lokal jika menggunakan offline) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg px-5">
+    <a class="navbar-brand" href="#">
+      <img src="img/logo.png" alt="Logo" class="navbar-logo">
+      SMPN 3 Subang
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Beranda</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="profilDropdown" role="button" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Profil
+          </a>
+          <div class="dropdown-menu" aria-labelledby="profilDropdown">
+            <a class="dropdown-item" href="#">Tim</a>
+            <a class="dropdown-item" href="#">Visi Misi</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="informasiDropdown" role="button" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Informasi
+          </a>
+          <div class="dropdown-menu" aria-labelledby="informasiDropdown">
+            <a class="dropdown-item" href="#">Berita</a>
+            <a class="dropdown-item" href="#">Acara</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="kontak.html">Kontak</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container my-2">
+    <div id="bannerCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/1.JPG" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/2.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <div class="container my-5">
+    <div class="content text-center">
+      <h2>Selamat Datang Di Website SMPN 3 Subang</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores fuga sed doloremque numquam harum nobis hic
+        commodi id. Incidunt provident doloribus molestiae cum saepe iste autem nemo, recusandae quos eum!</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row gap-2 justify-content-center">
+      <div class="col-1_5 bg-body-tertiary p-5 text-center rounded-3 shadow-sm">
+        <h4>C</h4>
+        Cerdas
+      </div>
+      <div class="col-1_5 bg-body-tertiary p-5 text-center rounded-3 shadow-sm">
+        <h4>A</h4>
+        Agamis
+      </div>
+      <div class="col-1_5 bg-body-tertiary p-5 text-center rounded-3 shadow-sm">
+        <h4>N</h4>
+        Nyaman
+      </div>
+      <div class="col-1_5 bg-body-tertiary p-5 text-center rounded-3 shadow-sm">
+        <h4>T</h4>
+        Tertib
+      </div>
+      <div class="col-1_5 bg-body-tertiary p-5 text-center rounded-3 shadow-sm">
+        <h4>I</h4>
+        Inovatif
+      </div>
+      <div class="col-1_5 bg-body-tertiary p-5 text-center rounded-3 shadow-sm">
+        <h4>K</h4>
+        Kreatif
+      </div>
+    </div>
+  </div>
+  <div class="container my-5">
+    <div class="agenda">
+      <h2 class="text-center">Agenda</h2>
+      <div class="row row-gap-2 my-5">
+        <div class="col-4">
+          <!-- Card 1 -->
+          <div class="card position-relative">
+            <img src="https://placekitten.com/300/200" class="card-img-top" alt="Card Image">
+            <div class="card-body">
+              <a href=""
+                class="stretched-link link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-body">
+                <h5 class="card-title">Agenda 1</h5>
+              </a>
+              <small class="card-subtitle">01 Januari 2023 | Lokasi 1</small>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sint dolore sunt. Exercitationem
+                excepturi in quod laboriosam expedita doloribus similique voluptates nesciunt impedit quas minima id
+                voluptatem, error libero ut?</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <!-- Card 2 -->
+          <div class="card position-relative">
+            <img src="https://placekitten.com/300/201" class="card-img-top" alt="Card Image">
+            <div class="card-body">
+              <a href=""
+                class="stretched-link text-body link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                <h5 class="card-title">Agenda 2</h5>
+              </a>
+              <small class="card-subtitle">01 Januari 2023 | Lokasi 1</small>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga doloribus laudantium sapiente veritatis
+                nesciunt molestias odit deserunt dolor debitis dolorum consectetur rem rerum praesentium expedita
+                maiores porro, atque itaque odio?</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <!-- Card 3 -->
+          <div class="card position-relative">
+            <img src="https://placekitten.com/300/202" class="card-img-top" alt="Card Image">
+            <div class="card-body">
+              <a href=""
+                class="stretched-link link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-body">
+                <h5 class="card-title">Agenda 2</h5>
+              </a>
+              <small class="card-subtitle">01 Januari 2023 | Lokasi 1</small>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam cupiditate totam quaerat accusamus
+                error quo aliquam ab mollitia natus sed laudantium, quas inventore perspiciatis illo, officiis nam earum
+                ipsam culpa?</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tambahkan card lainnya sesuai kebutuhan -->
+      </div>
+    </div>
+  </div>
+  <div class="container my-5">
+    <div class="berita">
+      <h2 class="text-center">Berita Terbaru</h2>
+      <div class="row my-5">
+        <!-- Card 1 -->
+        <div class="col-md-6">
+          <div class="mb-4 overflow-hidden border rounded shadow-sm row g-0 flex-md-row h-md-250 position-relative">
+            <div class="col-auto d-none d-lg-block my-auto px-4">
+              <img src="https://placekitten.com/600/400" class="img-fluid" width="200" alt="Berita 1">
+            </div>
+            <div class="p-4 col d-flex flex-column position-static">
+              <a href=""
+                class="gap-1 stretched-link link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-body">
+                <h5 class="mb-0">
+                  Berita 1
+                </h5>
+              </a>
+
+              <small class="mb-1 text-body-secondary">Jun 21 | Admin</small>
+              <p class="mb-auto"></p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. At
+                tempore consequatur nemo
+              </p>
+
+            </div>
+          </div>
+        </div>
+        <!-- Card 1 -->
+        <div class="col-md-6">
+          <div class="mb-4 overflow-hidden border rounded shadow-sm row g-0 flex-md-row h-md-250 position-relative">
+            <div class="col-auto d-none d-lg-block my-auto px-4">
+              <img src="https://placekitten.com/600/400" class="img-fluid" width="200" alt="Berita 1">
+            </div>
+            <div class="p-4 col d-flex flex-column position-static">
+              <a href=""
+                class="gap-1 stretched-link link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-body">
+                <h5 class="mb-0">
+                  Berita 2
+                </h5>
+              </a>
+
+              <small class="mb-1 text-body-secondary">Jun 21 | Admin</small>
+              <p class="mb-auto"></p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. At
+                tempore consequatur nemo
+              </p>
+
+            </div>
+          </div>
+        </div>
+        <!-- Card 1 -->
+        <div class="col-md-6">
+          <div class="mb-4 overflow-hidden border rounded shadow-sm row g-0 flex-md-row h-md-250 position-relative">
+            <div class="col-auto d-none d-lg-block my-auto px-4">
+              <img src="https://placekitten.com/600/400" class="img-fluid" width="200" alt="Berita 1">
+            </div>
+            <div class="p-4 col d-flex flex-column position-static">
+              <a href=""
+                class="gap-1 stretched-link link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-body">
+                <h5 class="mb-0">
+                  Berita 3
+                </h5>
+              </a>
+
+              <small class="mb-1 text-body-secondary">Jun 21 | Admin</small>
+              <p class="mb-auto"></p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. At
+                tempore consequatur nemo
+              </p>
+
+            </div>
+          </div>
+        </div>
+        <!-- Card 1 -->
+        <div class="col-md-6">
+          <div class="mb-4 overflow-hidden border rounded shadow-sm row g-0 flex-md-row h-md-250 position-relative">
+            <div class="col-auto d-none d-lg-block my-auto px-4">
+              <img src="https://placekitten.com/600/400" class="img-fluid" width="200" alt="Berita 1">
+            </div>
+            <div class="p-4 col d-flex flex-column position-static">
+              <a href=""
+                class="gap-1 stretched-link link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-body">
+                <h5 class="mb-0">
+                  Berita 4
+                </h5>
+              </a>
+
+              <small class="mb-1 text-body-secondary">Jun 21 | Admin</small>
+              <p class="mb-auto"></p>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. At
+                tempore consequatur nemo
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="owl-carousel owl-theme ">
+      <!-- Card 1 -->
+      <div class="item">
+        <div class="card">
+          <img src="https://placekitten.com/300/300" class="card-img-top" alt="Anggota Organisasi 1">
+          <div class="card-body">
+            <h5 class="card-title">Nama Anggota 1</h5>
+            <p class="card-text">Jabatan 1</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="item">
+        <div class="card">
+          <img src="https://placekitten.com/301/301" class="card-img-top" alt="Anggota Organisasi 2">
+          <div class="card-body">
+            <h5 class="card-title">Nama Anggota 2</h5>
+            <p class="card-text">Jabatan 2</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="item">
+        <div class="card">
+          <img src="https://placekitten.com/302/302" class="card-img-top" alt="Anggota Organisasi 3">
+          <div class="card-body">
+            <h5 class="card-title">Nama Anggota 3</h5>
+            <p class="card-text">Jabatan 3</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="item">
+        <div class="card">
+          <img src="https://placekitten.com/303/303" class="card-img-top" alt="Anggota Organisasi 4">
+          <div class="card-body">
+            <h5 class="card-title">Nama Anggota 4</h5>
+            <p class="card-text">Jabatan 4</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="py-5 text-center text-body-secondary bg-body-tertiary mt-auto">
+    <p>
+      Dibuat dengan <a href="https://getbootstrap.com/">Bootstrap</a> oleh
+      <a href="#">Kelompok 5</a>.
+    </p>
+    <p>
+      ©2023
+    </p>
+    <p class="mb-0">
+      <a href="#">Back to top</a>
+    </p>
+  </footer>
+
+  <!-- Bootstrap JS and Popper.js (Ganti dengan path lokal jika menggunakan offline) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 2
+          },
+          1000: {
+            items: 3
+          }
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

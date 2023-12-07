@@ -1,0 +1,67 @@
+.navbar {
+    background: #87C4FF;
+}
+
+.navbar-logo {
+    width: 20%;
+}
+
+.navbar a {
+    color: white;
+}
+
+.dropdown-menu {
+    background: #87C4FF;
+}
+
+.carousel-card {
+    margin: 0 auto;
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .carousel-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    
+  }
+
+  .carousel-card .card-body {
+    padding: 15px;
+  }
+
+  .col-1_5 {
+    flex: 0 0 auto;
+    width: 15.66666667%;
+  }
+
+  /* contact */ 
+  .contact label,
+  .contact input,
+  .contact textarea {
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+  }
+  
+  .contact button {
+    width: 80%;
+    height: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: #87C4FF;
+    color: #000;
+    border: none;
+  }
+  #address{
+    float: right;
+    padding: 70px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #87C4FF;
+    width: 550px;
+    height: 350px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px;
+  }
