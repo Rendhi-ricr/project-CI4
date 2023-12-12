@@ -53,30 +53,34 @@
     </div>
   </nav>
 
-  <div class="container mt-5">
-    <h2 class="text-center">Contact Us</h2>
-    <div class="row">
-      <div class="col-md-6">
-        <form class="contact">
-          <label for="name">Nama:</label>
-          <input type="text" id="name" name="name" required>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-          <label for="message">Pesan:</label>
-          <textarea id="message" name="message" required></textarea>
-          <button type="submit">Kirim Pesan</button>
-        </form>
+  <div class="container">
+    <h2 class="text-center">Hubungi Kami</h2>
+    <!-- Form Pertanyaan -->
+    <form>
+      <div class="form-group">
+        <label for="nama">Nama:</label>
+        <input type="text" class="form-control" id="nama" placeholder="Masukkan nama">
       </div>
-      <div class="col-md-6 text-center">
-        <h4>Location</h4>
-        <div id="map"></div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Masukkan email">
       </div>
-    </div>
+      <div class="form-group">
+        <label for="pesan">Pertanyaan:</label>
+        <textarea class="form-control" id="pesan" rows="3" placeholder="Tulis pertanyaan Anda"></textarea>
+      </div>
+      <br>
+      <button type="submit" class="btn btn-primary">Kirim Pertanyaan</button>
+    </form>
+    <br>
+    <h2 class="text-center">Titik Koordinat Maps</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.6512765289986!2d107.76239177506228!3d-6.56562456418304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e693b628424b677%3A0x778b76fe50c6ea7e!2sSMP%20Negeri%203%20Subang!5e0!3m2!1sid!2sid!4v1702376204932!5m2!1sid!2sid"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 
-  <!-- Bootstrap JS and Popper.js (Ganti dengan path lokal jika menggunakan offline) -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
   </script>
