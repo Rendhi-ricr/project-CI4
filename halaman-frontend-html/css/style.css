@@ -14,6 +14,9 @@
     background: #87C4FF;
 }
 
+.carousel-inner {
+  height: 500px;
+}
 .carousel-card {
     margin: 0 auto;
     max-width: 300px;
@@ -67,3 +70,58 @@
     height: 300px;
     border: 0;
 } 
+
+/* Visi dan Misi */
+.vm {
+  margin-top: 20px;
+}
+.visi-misi-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.visi,
+.misi {
+  padding: 100px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #000000;
+}
+
+/* skepsek */
+.sambutan-container {
+  margin-top: 10px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2,
+h3 {
+  color: #000000;
+}
+
+.profile-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10%;
+  margin-bottom: 20px;
+}
+
+/* eskul */
+.ekstrakurikuler-card {
+  margin-bottom: 20px;
+}
+
+.ekstrakurikuler-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* dashboard */
+
