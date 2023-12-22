@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.datatables.net/v/bs4/dt-1.13.8/r-2.5.0/sb-1.6.0/sp-2.2.0/datatables.min.css"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <aside id="sidebar" class="">
+
+            <div class="sidebar-brand">
+                <img src="logo.png" alt="" srcset="" width="50">
+                <a href="">SMPN 3 SUBANG</a>
+            </div>
+            <hr>
+
+            <ul class="list-unstyled components">
+                <li class="menu-item">
+                    <a href="index.html" class="menu-link">
+                        <i class='bx bx-home'></i> Dashboard
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="" data-toggle="collapse" data-target="#profilSubmenu" aria-expanded="false"
+                        class="menu-link menu-collapse dropdown-toggle collapsed"><i class='bx bxs-school'></i>
+                        Manage
+                        Profil</a>
+                    <ul class="collapse list-unstyled" id="profilSubmenu">
+                        <li>
+                            <a href="afasilitas.html">Fasilitas</a>
+                        </li>
+                        <li>
+                            <a href="adataguru.html">Data Guru</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="" data-toggle="collapse" data-target="#informasisubmenu" aria-expanded="false"
+                        class="menu-link menu-collapse dropdown-toggle collapsed"><i class='bx bx-info-circle'></i>
+                        Manage
+                        Informasi</a>
+                    <ul class="collapse list-unstyled" id="informasisubmenu">
+                        <li>
+                            <a href="aberita.html">Berita</a>
+                        </li>
+                        <li>
+                            <a href="aagenda.html">Agenda</a>
+                        </li>
+                        <li>
+                            <a href="aeskul.html">Ekstrakurikuler</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="auser.html" class="menu-link">
+                        <i class='bx bxs-user'></i> Manage User
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="ams.html" class="menu-link"><i class='bx bx-envelope'></i> Masukan Dan Saran</a>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Page Content -->
+        <div class="navbar-bg"></div>
+        <nav class="navbar navbar-expand-lg">
+            <ul class="navbar-nav">
+
+            </ul>
+            <ul class="navbar-nav ml-auto mr-3 align-items-center">
+                <li class="nav-item dropdown">
+                    <a href="#" class="dropdown-toggle text-decoration-none text-body" role="button"
+                        data-toggle="dropdown" data-target=""><i class='bx bx-user'></i></a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <p class="dropdown-item"><i class='bx bx-user'></i> Hi, Cucu Badriah!</p>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item"><i class='bx bx-log-out'></i> Keluar</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <section class="content">
+            <div class="content-header">
+                <h1>Data Agenda </h1>
+
+                <ol class="breadcrumb content-header-breadcrumb my-sm-auto">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Library</li>
+                </ol>
+
+            </div>
+            <div class="main-content">
+                <div class="block">
+                    <a href="" class="btn btn-primary btn-sm my-4"><i class="bx bx-plus"></i> Tambah Data</a>
+                    <div class="card">
+                        <div class="card-header">
+                            <h6>Table</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Nama</th>
+                                            <th>Alamat</th>
+                                            <th>Aksi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Cupita</td>
+                                            <td>Indramayu</td>
+                                            <td>
+                                                <a href="" class="btn btn-warning btn-sm">Edit</a>
+                                                <a href="" class="btn btn-danger btn-sm">Hapus</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Tia</td>
+                                            <td>Subang</td>
+                                            <td>
+                                                <a href="" class="btn btn-warning btn-sm">Edit</a>
+                                                <a href="" class="btn btn-danger btn-sm">Hapus</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Rendi</td>
+                                            <td>Subang</td>
+                                            <td>
+                                                <a href="" class="btn btn-warning btn-sm">Edit</a>
+                                                <a href="" class="btn btn-danger btn-sm">Hapus</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Gan gan</td>
+                                            <td>Subang</td>
+                                            <td>
+                                                <a href="" class="btn btn-warning btn-sm">Edit</a>
+                                                <a href="" class="btn btn-danger btn-sm">Hapus</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer border-top">
+            <div class="footer-left">
+                Copyright &copy; 2023
+
+            </div>
+            <div class="footer-right">
+                2.3.0
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdn.datatables.net/v/bs4/dt-1.13.8/r-2.5.0/sb-1.6.0/sp-2.2.0/datatables.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {});
+
+            $(document).on('show.bs.collapse', '.collapse', function () {
+                console.log('Clicked!');
+                $('.show').collapse('hide')
+            })
+
+            $('.table').DataTable()
+        });
+    </script>
+
+</body>
+
+</html>

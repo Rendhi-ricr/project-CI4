@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar">
+            <div class="sidebar-logo">
+                <a class="navbar-brand text-dark" href="#">
+                    <img src="logo.png" alt="" width="30%" class="d-inline-block align-text-center">
+                    Admin - Smpn 3 Subang
+                </a>
+            </div>
+            <hr>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#">
+                        <i class='bx bx-home'></i> Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="#profilSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
+                            class='bx bxs-school'></i> Manage Profil</a>
+                    <ul class="collapse list-unstyled" id="profilSubmenu">
+                        <li>
+                            <a href="afasilitas.html">Fasilitas</a>
+                        </li>
+                        <li>
+                            <a href="adataguru.html">Data Guru</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#informasisubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
+                            class='bx bx-info-circle'></i> Manage
+                        Informasi</a>
+                    <ul class=" collapse list-unstyled align-text-center" id="informasisubmenu">
+                        <li>
+                            <a href="aberita.html">Berita</a>
+                        </li>
+                        <li>
+                            <a href="aagenda.html">Agenda</a>
+                        </li>
+                        <li>
+                            <a href="aeskul.html">Ekstrakurikuler</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="auser.html">
+                        <i class='bx bxs-user'></i> Manage User
+                    </a>
+                </li>
+                <li>
+                    <a href="ams.html"><i class='bx bx-envelope'></i> Masukan Dan Saran</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content -->
+        <div class="header">
+            <h2>Main Content</h2>
+            <p>Isi halaman utama...</p>
+        </div>
+
+        <div class="content">
+            <h3>Data Fasilitas</h3>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Nomor</th>
+                        <th>Nama</th>
+                        <th>Email</th>
+                        <th>Pertanyaan</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><button class="btn-e"><i class='bx bx-edit-alt'></i></button> | <button class="btn-h"><i
+                                    class='bx bxs-trash'></i></button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {});
+        });
+    </script>
+
+</body>
+
+</html>
